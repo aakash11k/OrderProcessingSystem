@@ -45,7 +45,7 @@ public class OrdersController : ControllerBase
     public IActionResult ReceiveWebhook(
     [FromBody] object payload)
     {
-        return Ok();
+        return Ok("Webhook recieved");
     }
 
 }

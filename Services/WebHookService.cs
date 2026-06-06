@@ -34,8 +34,8 @@ public class WebhookService
             "application/json");
 
         var response = await _httpClient.PostAsync(
-            "https://webhook.site/YOUR-URL",
-            content);
+      "https://localhost:7007/api/webhooks",
+      content);
 
         var responseText = await response.Content.ReadAsStringAsync();
 
